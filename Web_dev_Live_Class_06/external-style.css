@@ -1,0 +1,29 @@
+.homepage-banner{
+    height:300px;
+    width: 700px;
+}
+
+.external-css{
+    background-color: yellow;
+    color:black;
+  }
+
+#external-css-via-id{
+   color: white;
+   background-color: gray; 
+}  
+p.inset {
+    border-style: inset;
+    border-width: 10px;
+    text-align: center;
+    border-color: green;
+    border-radius: 12px;
+}
+
+h4,p {
+    text-decoration: underline;
+  }
+  
+a {
+    text-decoration: none;
+}  
