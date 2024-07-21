@@ -1,0 +1,74 @@
+<html>
+        <body>
+         
+        <h2>My First JavaScript</h2>
+        
+        <button onclick="alert('Yes working now......!')">
+            Click Here
+        </button>
+        <hr>
+        <h1 id="old_message">Old Message here "Ram Ram....!"</h1>
+        
+        <button onclick="document.getElementById('old_message').innerHTML ='Namstee...!' ">
+         Change Old Message
+        </button>
+        <br/>
+        <hr>
+        <br/>
+
+        <button onclick="document.getElementById('image_bulb_id').src='file:///C:/Users/ASGBUSER00197/Desktop/web_classes/Web_dev_Live_Class_12_Javascript/images/pic_bulbon.gif'">On Karo</button>&nbsp;
+       
+
+        <img id="image_bulb_id" src="file:///C:/Users/ASGBUSER00197/Desktop/web_classes/Web_dev_Live_Class_12_Javascript/images/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('image_bulb_id').src='file:///C:/Users/ASGBUSER00197/Desktop/web_classes/Web_dev_Live_Class_12_Javascript/images/pic_bulboff.gif'">Off Karo</button>
+        
+        <hr>
+        <h1 >Old Content change 
+            <span id="old_message_2">"Ram Ram....!"</span>
+        </h1>
+        
+        <button onclick="ChangeContentFunction()">
+         Change Old Message
+        </button>
+    
+        <hr>
+        <button onclick="window.alert('Succesfully Updated');">Window Alert</button>
+        
+        <hr>
+        <p>OnKeyPress</p>
+        <input type="text" id="email_id" onkeypress="onKeyPressFunction()" >
+        <p>OnKeyUp</p>
+        <h2>Result:
+            <span id="input_value_result"></span>
+        </h2>
+        <input type="text" id="email_id2" onkeyup="onKeyUpFunction()" >
+        <hr>
+        <p>Change Input Value
+            </p>
+            <input type="text" id="name_id" value="Subodh Kumar"><br/> <br/>
+            <button onclick="ChangeInputValueFunction()">
+Change Name in Input
+            </button> 
+
+        <script>
+            function ChangeInputValueFunction(){
+                document.getElementById("name_id").value = 'Engineer Malaysia Wala';
+            }
+
+            function onKeyUpFunction(){
+                document.getElementById('input_value_result').innerHTML = document.getElementById("email_id2").value;
+                //alert(document.getElementById("email_id2").value);
+            }
+
+            function onKeyPressFunction(){
+                alert(document.getElementById("email_id").value);
+            }
+
+            function ChangeContentFunction(){
+                document.getElementById('old_message_2').innerHTML ='Namstee...!';
+            }
+        </script>    
+    
+    </body>
+</html>    
